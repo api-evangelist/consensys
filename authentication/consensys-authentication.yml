@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.infura.io/get-started/infura.md
+docs: https://docs.metamask.io/services/
+summary:
+  types: [apiKey]
+  api_key_in: [path]
+  oauth2_flows: []
+note: >-
+  Infura (Consensys) authenticates JSON-RPC requests with an API key embedded in
+  the request URL path — e.g. https://mainnet.infura.io/v3/<YOUR-API-KEY>. API
+  keys are created and managed in the Infura dashboard (app.infura.io). There is
+  no OAuth surface for the JSON-RPC APIs; keys can be further restricted per
+  network/endpoint and optionally secured with an API key secret / allowlists.
+schemes:
+  - name: infuraApiKey
+    type: apiKey
+    in: path
+    parameter: v3/{API_KEY}
+    description: >-
+      Project/API key appended to the endpoint host as the final path segment
+      (…/v3/<YOUR-API-KEY>). Applies across all supported networks.
+    endpoint_example: https://mainnet.infura.io/v3/<YOUR-API-KEY>
+    management: https://app.infura.io/
+key_hardening:
+  - API key secret (basic-auth style) can be required on requests.
+  - Allowlists: restrict a key by contract address, user-agent, origin, and request methods.
