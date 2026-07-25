@@ -1,0 +1,50 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.infura.io/get-started/infura.md
+docs: https://docs.metamask.io/services/
+api_style: JSON-RPC 2.0 over HTTPS (POST) and WebSocket
+transport:
+  http: All requests are HTTP POST to the network endpoint host.
+  websocket: WebSocket endpoints available for subscriptions (eth_subscribe) on supported networks.
+authentication:
+  style: apiKey-in-path
+  see: authentication/consensys-authentication.yml
+request_envelope:
+  spec: JSON-RPC 2.0
+  fields: [jsonrpc, method, params, id]
+  example: '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+batch:
+  supported: true
+  note: Standard JSON-RPC 2.0 batch requests (an array of request objects) are supported.
+idempotency:
+  supported: false
+  note: >-
+    No provider idempotency-key contract. JSON-RPC read methods (eth_getBalance,
+    eth_blockNumber, eth_call, etc.) are naturally idempotent; state-changing
+    submission is only via eth_sendRawTransaction, whose idempotency is governed
+    by the transaction nonce on-chain, not an HTTP idempotency key.
+pagination:
+  style: parameter-range
+  note: >-
+    No cursor pagination; large queries (e.g. eth_getLogs) are bounded by block
+    ranges (fromBlock/toBlock) and per-response result caps rather than page tokens.
+versioning:
+  scheme: uri-path
+  current: v3
+  note: API key endpoints are served under the /v3/ path segment.
+error_envelope:
+  spec: JSON-RPC 2.0 error object
+  shape: '{"jsonrpc":"2.0","id":1,"error":{"code":-32000,"message":"..."}}'
+  see: errors/consensys-problem-types.yml
+rate_limit_signal:
+  model: credit-based quotas per API key (daily/throughput credits by plan)
+  http_status: 429 Too Many Requests when rate/credit limits are exceeded
+  docs: https://docs.infura.io/get-started/pricing
+unsupported_methods:
+  - eth_sendTransaction
+  - eth_sign
+  - eth_coinbase
+cross_links:
+  authentication: authentication/consensys-authentication.yml
+  errors: errors/consensys-problem-types.yml
+  lifecycle: lifecycle/consensys-lifecycle.yml

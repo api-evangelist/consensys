@@ -1,0 +1,72 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/ (npm registry lookups) + https://docs.metamask.io/sdk/
+note: >-
+  First-party Consensys/MetaMask client libraries. The MetaMask SDK / Connect
+  family connects dapps to MetaMask; @metamask/eth-json-rpc-infura targets the
+  Infura JSON-RPC endpoints; @consensys/linea-sdk targets the Linea L2 network.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@metamask/sdk"
+    url: https://www.npmjs.com/package/@metamask/sdk
+    install: npm i @metamask/sdk
+    version: 0.34.0
+    official: true
+    description: Connect dapps to millions of MetaMask wallet users (MetaMask SDK).
+  - language: javascript
+    registry: npm
+    name: "@metamask/sdk-react"
+    url: https://www.npmjs.com/package/@metamask/sdk-react
+    install: npm i @metamask/sdk-react
+    version: 0.33.1
+    official: true
+    description: React component and hooks to connect and use the MetaMask SDK.
+  - language: javascript
+    registry: npm
+    name: "@metamask/providers"
+    url: https://www.npmjs.com/package/@metamask/providers
+    install: npm i @metamask/providers
+    version: 22.1.1
+    official: true
+    description: JavaScript Ethereum provider that connects to the wallet over a stream.
+  - language: javascript
+    registry: npm
+    name: "@metamask/detect-provider"
+    url: https://www.npmjs.com/package/@metamask/detect-provider
+    install: npm i @metamask/detect-provider
+    version: 2.0.0
+    official: true
+    description: Tiny utility for detecting the MetaMask Ethereum provider.
+  - language: javascript
+    registry: npm
+    name: "@metamask/onboarding"
+    url: https://www.npmjs.com/package/@metamask/onboarding
+    install: npm i @metamask/onboarding
+    version: 1.0.1
+    official: true
+    description: Assists with onboarding new MetaMask users.
+  - language: javascript
+    registry: npm
+    name: "@metamask/eth-json-rpc-infura"
+    url: https://www.npmjs.com/package/@metamask/eth-json-rpc-infura
+    install: npm i @metamask/eth-json-rpc-infura
+    version: 10.3.0
+    official: true
+    description: json-rpc-engine middleware for Infura's JSON-RPC endpoints.
+  - language: javascript
+    registry: npm
+    name: "@metamask/delegation-toolkit"
+    url: https://www.npmjs.com/package/@metamask/delegation-toolkit
+    install: npm i @metamask/delegation-toolkit
+    version: 0.13.0
+    official: true
+    description: MetaMask Delegation Toolkit built on top of Viem.
+  - language: javascript
+    registry: npm
+    name: "@consensys/linea-sdk"
+    url: https://www.npmjs.com/package/@consensys/linea-sdk
+    install: npm i @consensys/linea-sdk
+    version: 0.3.0
+    official: true
+    description: SDK for interacting with the Linea L2 network (Consensys).

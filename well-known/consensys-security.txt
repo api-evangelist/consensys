@@ -1,0 +1,7 @@
+Contact: mailto:security@consensys.net
+Expires: 2025-12-31T18:26:00.000Z
+Encryption: https://consensys.io/pgp-key.txt
+Preferred-Languages: en, es, fr
+Canonical: https://consensys.io/.well-known/security.txt
+Policy: https://consensys.io/security/
+Hiring: https://consensys.io/careers/

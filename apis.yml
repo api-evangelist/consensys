@@ -1,23 +1,79 @@
 aid: consensys
 name: Consensys
-description: 'Consensys is a company surfaced as a portfolio company of electric-capital, softbank-vision-fund
-  and added to the API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  Consensys is a blockchain and Web3 software company founded by Ethereum
+  co-founder Joseph Lubin that builds core Ethereum infrastructure and developer
+  tooling for the decentralized web. Its product suite includes MetaMask (the
+  self-custodial wallet and MetaMask Developer / Connect SDK), Infura (managed,
+  high-availability JSON-RPC blockchain node APIs, IPFS, and a Gas API across
+  Ethereum and 40+ EVM networks), Linea (a zkEVM Layer 2 network), Besu and Teku
+  (execution and consensus clients), and Diligence/MythX smart-contract security
+  tooling. Developers use Infura's API-key-authenticated JSON-RPC 2.0 endpoints
+  to read and broadcast to Ethereum, Base, Arbitrum, Optimism, Polygon, Linea and
+  more without operating their own nodes.
 url: https://raw.githubusercontent.com/api-evangelist/consensys/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://images.ctfassets.net/gjyjx7gst9lo/KSIfy6249SncAzulCYpbk/64a8d62db48e733cb7705247d6d70953/Consensys_is_building_the_era_of_decentralized_finance.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - electric-capital
 - softbank-vision-fund
-x-tier: stub
+x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Infrastructure
-apis: []
+- Blockchain
+- Ethereum
+- Web3
+- Developer Tools
+- JSON-RPC
+- Node Infrastructure
+- Wallet
+- Layer 2
+apis:
+- name: Infura Web3 API
+  description: >-
+    Infura's managed Web3 API surface — JSON-RPC 2.0 access to Ethereum and 40+
+    EVM networks (Base, Arbitrum, Optimism, Polygon, Linea, and more), plus IPFS
+    and a Gas API. Authenticated with an API key embedded in the endpoint path.
+  humanURL: https://docs.infura.io/
+  baseURL: https://mainnet.infura.io/v3/
+  tags:
+  - Blockchain
+  - Ethereum
+  - JSON-RPC
+  - Web3
+  properties:
+  - type: Documentation
+    url: https://docs.infura.io/
+  - type: APIReference
+    url: https://docs.infura.io/reference
+  - type: GettingStarted
+    url: https://docs.infura.io/get-started/infura
+  - type: Authentication
+    url: authentication/consensys-authentication.yml
+  - type: Conventions
+    url: conventions/consensys-conventions.yml
+  - type: ErrorCatalog
+    url: errors/consensys-problem-types.yml
+  - type: Sandbox
+    url: sandbox/consensys-sandbox.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +82,66 @@ maintainers:
 common:
 - type: Website
   url: https://consensys.io/
+- type: DeveloperPortal
+  url: https://developer.metamask.io/
+- type: Documentation
+  url: https://docs.infura.io/
+- type: APIReference
+  url: https://docs.infura.io/reference
+- type: GettingStarted
+  url: https://docs.infura.io/get-started/infura
+- type: Support
+  url: https://support.metamask.io/
+- type: Blog
+  url: https://consensys.io/blog
+- type: GitHubOrganization
+  url: https://github.com/Consensys
+- type: Pricing
+  url: https://www.infura.io/pricing
+- type: SignUp
+  url: https://app.infura.io/register
+- type: TermsOfService
+  url: https://consensys.io/terms-of-use
+- type: PrivacyPolicy
+  url: https://consensys.io/privacy-notice
+- type: StatusPage
+  url: https://status.infura.io/
+- type: Packages
+  url: packages/consensys-packages.yml
+- type: SDKs
+  url: packages/consensys-packages.yml
+- type: Authentication
+  url: authentication/consensys-authentication.yml
+- type: Conventions
+  url: conventions/consensys-conventions.yml
+- type: ErrorCatalog
+  url: errors/consensys-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/consensys-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/consensys-lifecycle.yml
+- type: Conformance
+  url: conformance/consensys-conformance.yml
+- type: Compliance
+  url: https://trust.consensys.io/
+- type: TrustCenter
+  url: security/consensys-trust-center.yml
+- type: Security
+  url: https://consensys.io/security/
+- type: VulnerabilityDisclosure
+  url: security/consensys-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/consensys-domain-security.yml
+- type: Sandbox
+  url: sandbox/consensys-sandbox.yml
+- type: WellKnown
+  url: well-known/consensys-well-known.yml
+- type: SecurityTxt
+  url: well-known/consensys-security.txt
+- type: LLMsTxt
+  url: llms/consensys-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

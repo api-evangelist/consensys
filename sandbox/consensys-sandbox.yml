@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.infura.io/
+note: >-
+  Infura has no separate "test key" mode; the same API key works across mainnet
+  and public test networks. Development/testing is done against Ethereum and L2
+  testnet endpoints (same host pattern, different subdomain), which carry no real
+  value and are funded from public faucets.
+model: testnet-endpoints
+key_prefix_separation: false
+test_endpoints:
+  - network: Ethereum Sepolia
+    endpoint: https://sepolia.infura.io/v3/<YOUR-API-KEY>
+  - network: Ethereum Holesky
+    endpoint: https://holesky.infura.io/v3/<YOUR-API-KEY>
+  - network: Linea Sepolia
+    endpoint: https://linea-sepolia.infura.io/v3/<YOUR-API-KEY>
+  - network: Base Sepolia
+    endpoint: https://base-sepolia.infura.io/v3/<YOUR-API-KEY>
+  - network: Arbitrum Sepolia
+    endpoint: https://arbitrum-sepolia.infura.io/v3/<YOUR-API-KEY>
+  - network: Optimism Sepolia
+    endpoint: https://optimism-sepolia.infura.io/v3/<YOUR-API-KEY>
+  - network: Polygon Amoy
+    endpoint: https://polygon-amoy.infura.io/v3/<YOUR-API-KEY>
+faucets: Public testnet ETH is obtained from third-party/community faucets (not funded by Infura).

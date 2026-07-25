@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: https://trust.consensys.io/ + https://docs.infura.io/
+standards:
+  - id: json-rpc-2.0
+    conforms: true
+    evidence: All requests/responses follow the JSON-RPC 2.0 envelope (jsonrpc/method/params/id).
+  - id: ethereum-json-rpc
+    conforms: true
+    evidence: Implements the standard Ethereum JSON-RPC method set (eth_*, net_*, web3_*).
+  - id: soc2
+    conforms: true
+    evidence: SOC 2 attested per the Consensys Trust Center (trust.consensys.io).
+  - id: iso-27001
+    conforms: true
+    evidence: ISO/IEC 27001 certified per the Consensys Trust Center.
+  - id: oauth2
+    conforms: false
+    evidence: JSON-RPC APIs authenticate via API key in path, not OAuth2.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use the JSON-RPC 2.0 error object, not application/problem+json.
+compliance:
+  program_url: https://trust.consensys.io/
+  certifications: [SOC 2, ISO 27001]

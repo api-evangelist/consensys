@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://status.infura.io/ + https://docs.infura.io/
+versioning:
+  scheme: uri-path
+  current: v3
+  docs: https://docs.infura.io/
+  note: API key endpoints served under /v3/; older /v1 & /v2 endpoints were retired.
+deprecation:
+  policy: >-
+    Network and method availability change over time (networks graduate from
+    beta, some move to the Decentralized Infrastructure Network, deprecated
+    networks are sunset). Announced via the Infura dashboard, status page, and
+    docs. No formal RFC 8594 Sunset/Deprecation header contract is documented.
+  sunset_header: false
+sla:
+  note: Uptime/SLA commitments are plan-dependent (Team/Enterprise); see pricing.
+  docs: https://www.infura.io/pricing
+status_page: https://status.infura.io/
+status_history: https://status.infura.io/history
