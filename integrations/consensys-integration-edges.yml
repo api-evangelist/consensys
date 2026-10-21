@@ -2,6 +2,7 @@ generated: '2026-10-14'
 method: searched
 checked:
 - grafana-com/integrations/grafana-com-integration-edges.yml
+- terraform/integrations/terraform-integration-edges.yml
 source:
 - grafana-com/integrations/grafana-com-integration-edges.yml
 edges:
@@ -24,3 +25,22 @@ edges:
   category: Application
   badges:
   - signature:commercial
+- partner_name: Terraform (terraform-registry)
+  partner: terraform
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: terraform-registry
+  evidence: https://registry.terraform.io/providers/ConsenSys/quorum
+  mirror_of: terraform/integrations/terraform-integration-edges.yml
+  apps:
+  - ConsenSys/quorum
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+  badges:
+  - Verified publisher (Terraform partner tier)
