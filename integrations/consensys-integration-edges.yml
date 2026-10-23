@@ -3,6 +3,11 @@ method: searched
 checked:
 - grafana-com/integrations/grafana-com-integration-edges.yml
 - terraform/integrations/terraform-integration-edges.yml
+- https://github.com/LF-Decentralized-Trust-labs
+- https://github.com/canton-network/splice
+- https://github.com/hyperledger
+- https://landscape.lfdecentralizedtrust.org
+- https://landscape.lfdecentralizedtrust.org/data/full.json
 source:
 - grafana-com/integrations/grafana-com-integration-edges.yml
 edges:
@@ -44,3 +49,62 @@ edges:
   category: infrastructure-as-code provider registry listing
   badges:
   - Verified publisher (Terraform partner tier)
+- partner_name: LF Decentralized Trust Certified Service Provider
+  partner: lf-decentralized-trust
+  partner_match: register
+  type: register
+  direction: partner-built
+  category: LF Decentralized Trust CSP programme
+  evidence: https://landscape.lfdecentralizedtrust.org
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: LF Decentralized Trust Certified Service Providers (landscape category 'LF Decentralized Trust CSPs')
+    spec_file: null
+    standard: LF Decentralized Trust Certified Service Provider
+    role: lfdt-csp
+    registered_name: Consensys
+    website: https://consensys.io/
+    matched_domain: consensys.io
+    matched_by: domain
+    certified_products:
+    - product: Besu Certified Service Provider
+      product_type: Besu Certified Service Provider
+      standard: Hyperledger Besu
+      lapsed: false
+    signal_note: 'certified_products = one entry per CSP programme (Fabric / Besu): LFDT vets the vendor''s service
+      delivery on that project; a vendor certification, not an API conformance test. The landscape publishes no
+      expiry, so none is flagged lapsed'
+    detected_by: sweep-lf-decentralized-trust-landscape.py
+    detected: '2026-10-22'
+  detected_by: sweep-lf-decentralized-trust-landscape.py
+  first_seen: '2026-10-22'
+- partner_name: LF Decentralized Trust (membership / landscape)
+  partner: lf-decentralized-trust
+  partner_match: register
+  type: register
+  direction: partner-built
+  category: LF Decentralized Trust membership
+  evidence: https://landscape.lfdecentralizedtrust.org
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: LF Decentralized Trust Landscape (landscape.lfdecentralizedtrust.org/data/full.json)
+    spec_file: null
+    standard: LF Decentralized Trust
+    role: lfdt-member
+    registered_name: Consensys Incorporated
+    registered_names:
+    - Consensys Incorporated
+    website: https://consensys.io/
+    matched_domain: consensys.io
+    matched_by: domain
+    landscape_categories: []
+    landscape_entries: 0
+    signal_note: 'participation only: LFDT membership / a landscape listing is standard-participant evidence, not
+      depth. Tier, entries and categories are CONTEXT, never counted'
+    detected_by: sweep-lf-decentralized-trust-landscape.py
+    detected: '2026-10-22'
+  detected_by: sweep-lf-decentralized-trust-landscape.py
+  first_seen: '2026-10-22'
+  partner_tier: General

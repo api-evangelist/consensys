@@ -29,3 +29,63 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: consensys-lf-decentralized-trust-certified-service-provider
+  label: LF Decentralized Trust Certified Service Provider
+  partner: lf-decentralized-trust
+  partner_name: LF Decentralized Trust Certified Service Provider
+  category: LF Decentralized Trust CSP programme
+  type: register
+  channel: standard-directory
+  evidence: https://landscape.lfdecentralizedtrust.org
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: LF Decentralized Trust Certified Service Providers (landscape category 'LF Decentralized Trust CSPs')
+    spec_file: null
+    standard: LF Decentralized Trust Certified Service Provider
+    role: lfdt-csp
+    registered_name: Consensys
+    website: https://consensys.io/
+    matched_domain: consensys.io
+    matched_by: domain
+    certified_products:
+    - product: Besu Certified Service Provider
+      product_type: Besu Certified Service Provider
+      standard: Hyperledger Besu
+      lapsed: false
+    signal_note: 'certified_products = one entry per CSP programme (Fabric / Besu): LFDT vets the vendor''s service
+      delivery on that project; a vendor certification, not an API conformance test. The landscape publishes no
+      expiry, so none is flagged lapsed'
+    detected_by: sweep-lf-decentralized-trust-landscape.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: consensys-lf-decentralized-trust-membership-landscape
+  label: LF Decentralized Trust (membership / landscape)
+  partner: lf-decentralized-trust
+  partner_name: LF Decentralized Trust (membership / landscape)
+  category: LF Decentralized Trust membership
+  type: register
+  channel: standard-directory
+  evidence: https://landscape.lfdecentralizedtrust.org
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: LF Decentralized Trust Landscape (landscape.lfdecentralizedtrust.org/data/full.json)
+    spec_file: null
+    standard: LF Decentralized Trust
+    role: lfdt-member
+    registered_name: Consensys Incorporated
+    registered_names:
+    - Consensys Incorporated
+    website: https://consensys.io/
+    matched_domain: consensys.io
+    matched_by: domain
+    landscape_categories: []
+    landscape_entries: 0
+    signal_note: 'participation only: LFDT membership / a landscape listing is standard-participant evidence, not
+      depth. Tier, entries and categories are CONTEXT, never counted'
+    detected_by: sweep-lf-decentralized-trust-landscape.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
